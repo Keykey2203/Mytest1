@@ -9,17 +9,16 @@ class TestAddGroup2(unittest.TestCase):
 
     def test_add_group2(self):
         wd = self.wd
-        # open home page
-        wd.get("http://localhost/addressbook/group.php")
-        # login
-        wd.find_element_by_name("user").click()
-        wd.find_element_by_name("user").clear()
-        wd.find_element_by_name("user").send_keys("admin")
-        wd.find_element_by_name("pass").clear()
-        wd.find_element_by_name("pass").send_keys("secret")
-        wd.find_element_by_xpath("//input[@value='Login']").click()
-        # open groups page
-        wd.find_element_by_link_text("groups").click()
+        self.open_home_page(wd)
+        self.login(wd)
+        self.open_groups_page(wd)
+        self.create_group(wd)
+        #return to groups page
+        wd.find_element_by_link_text("group page").click()
+        # logout
+        wd.find_element_by_link_text("Logout").click()
+
+    def create_group(self, wd):
         # init group creation
         wd.find_element_by_name("new").click()
         # fill group form
@@ -35,10 +34,23 @@ class TestAddGroup2(unittest.TestCase):
         # submit group creation
         wd.find_element_by_name("submit").click()
         wd.find_element_by_xpath("//div[@id='content']/div").click()
-        #return to groups page
-        wd.find_element_by_link_text("group page").click()
-        # logout
-        wd.find_element_by_link_text("Logout").click()
+
+    def open_groups_page(self, wd):
+        # open groups page
+        wd.find_element_by_link_text("groups").click()
+
+    def login(self, wd):
+        # login
+        wd.find_element_by_name("user").click()
+        wd.find_element_by_name("user").clear()
+        wd.find_element_by_name("user").send_keys("admin")
+        wd.find_element_by_name("pass").clear()
+        wd.find_element_by_name("pass").send_keys("secret")
+        wd.find_element_by_xpath("//input[@value='Login']").click()
+
+    def open_home_page(self, wd):
+        # open home page
+        wd.get("http://localhost/addressbook/group.php")
 
     def tearDown(self):
         self.wd.quit()
