@@ -1,22 +1,16 @@
-from selenium import webdriver
 
 
-class Application:
+class GroupHelper:
 
-    def __init__(self):
-        self.wd = webdriver.Firefox()
-        self.wd.implicitly_wait(30)
-
-    def logout(self):
-        wd = self.wd
-        wd.find_element_by_link_text("Logout").click()
+    def __init__(self, app):
+        self.app = app
 
     def return_to_groups_page(self):
-        wd = self.wd
+        wd = self.app.wd
         wd.find_element_by_link_text("group page").click()
 
-    def create_group(self, group):
-        wd = self.wd
+    def create(self, group):
+        wd = self.app.wd
         self.open_groups_page()
         # init group creation
         wd.find_element_by_name("new").click()
@@ -36,25 +30,6 @@ class Application:
         self.return_to_groups_page()
 
     def open_groups_page(self):
-        wd = self.wd
+        wd = self.app.wd
         # open groups page
         wd.find_element_by_link_text("groups").click()
-
-    def login(self, username, password):
-        wd = self.wd
-        self.open_home_page()
-        # login
-        wd.find_element_by_name("user").click()
-        wd.find_element_by_name("user").clear()
-        wd.find_element_by_name("user").send_keys(username)
-        wd.find_element_by_name("pass").clear()
-        wd.find_element_by_name("pass").send_keys(password)
-        wd.find_element_by_xpath("//input[@value='Login']").click()
-
-    def open_home_page(self):
-        wd = self.wd
-        # open home page
-        wd.get("http://localhost/addressbook/group.php")
-
-    def destroy(self):
-        self.wd.quit()
