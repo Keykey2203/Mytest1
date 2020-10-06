@@ -114,6 +114,21 @@ class ContactHelper:
         if (contact.photo != ""):
             wd.find_element_by_name("photo").send_keys(contact.photo)
 
+    def delete_first_contact(self):
+        wd = self.app.wd
+        # select first contact
+        wd.find_element_by_name("selected[]").click()
+        # submit deletion
+        wd.find_element_by_xpath("//input[@value='Delete']").click()
+        wd.switch_to_alert().accept()
+
+    def edit_contact(self, contact):
+        wd = self.app.wd
+        wd.find_element_by_xpath("//a[@href='edit.php?id=1']").click()
+        self.fill_company_info(contact)
+        self.fill_contacts_info(contact)
+        wd.find_element_by_name("update").click()
+
     def open_new_contact_page(self):
         wd = self.app.wd
         wd.find_element_by_link_text("add new").click()
