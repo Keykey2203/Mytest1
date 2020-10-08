@@ -124,9 +124,8 @@ class ContactHelper:
 
     def edit_contact(self, contact):
         wd = self.app.wd
-        wd.find_element_by_xpath("//a[@href='edit.php?id=1']").click()
-        self.fill_company_info(contact)
-        self.fill_contacts_info(contact)
+        wd.find_element_by_xpath("//img[@alt='Edit']").click()
+        self.fill_info(contact)
         wd.find_element_by_name("update").click()
 
     def open_new_contact_page(self):
@@ -135,6 +134,10 @@ class ContactHelper:
 
     def create(self, contact):
         self.open_new_contact_page()
+        self.fill_info(contact)
+        self.submit_new_contact()
+
+    def fill_info(self, contact):
         self.fill_fio(contact)
         self.fill_title(contact)
         self.fill_company_info(contact)
@@ -142,5 +145,3 @@ class ContactHelper:
         self.fill_bday(contact)
         self.fill_aday(contact)
         self.fill_secondary(contact)
-        self.submit_new_contact()
-
