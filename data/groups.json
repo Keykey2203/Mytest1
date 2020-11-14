@@ -30,36 +30,36 @@
   {
     "py/object": "model.group.Group",
     "name": "nameRFR",
-    "header": "header ;XCt|37|,M0'c0o",
-    "footer": "footer'#~9:fu(Nr%y3C[7 Z",
+    "header": "header ;XCt|37|,M0c0o",
+    "footer": "footer#~9:fu(Nr%y3C[7 Z",
     "id": null
   },
   {
     "py/object": "model.group.Group",
-    "name": "name<mQJ1",
-    "header": "header#  6-,",
-    "footer": "footer~U =xDduF\\9iZ",
+    "name": "namemQJ1",
+    "header": "header6-",
+    "footer": "footerU =xDduF9iZ",
     "id": null
   },
   {
     "py/object": "model.group.Group",
     "name": "namexPMBvs",
-    "header": "header) ++i>AqI\"",
+    "header": "header) ++i>AqI",
     "footer": "footer",
     "id": null
   },
   {
     "py/object": "model.group.Group",
-    "name": "nameTr] I\"Zev",
-    "header": "headerGq\"| c]{:7T",
+    "name": "nameTr] IZev",
+    "header": "headerGq| c]{:7T",
     "footer": "footer h5CebLTg",
     "id": null
   },
   {
     "py/object": "model.group.Group",
-    "name": "name@+?I",
-    "header": "headerg5DHE{`Uo < fV G<w]",
-    "footer": "footerKf6uVE&s4GQ5{#%J>O",
+    "name": "nameI",
+    "header": "headerg5DHEUo fV Gw]",
+    "footer": "footerKf6uVE&s4GQ5JO",
     "id": null
   },
   {
@@ -72,8 +72,8 @@
   {
     "py/object": "model.group.Group",
     "name": "nametc",
-    "header": "headerY* nz!~;od}Tx",
-    "footer": "footer ~#2d7Rq@1",
+    "header": "headerY* nz;odTx",
+    "footer": "footer 2d7Rq@1",
     "id": null
   }
 ]
