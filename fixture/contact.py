@@ -118,6 +118,17 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_element_by_link_text("add new").click()
 
+    def move_contact_to_group(self, contact_id, group_id):
+        self.app.open_home_page()
+        self.select_contact_by_id(contact_id)
+        self.move_to_group(group_id)
+
+    def move_to_group(self, group_id):
+        wd = self.app.wd
+        form = wd.find_element_by_css_selector("form[name='MainForm']")
+        Select(form.find_element_by_css_selector("select[name='to_group']")).select_by_value(str(group_id))
+        form.find_element_by_css_selector("input[name='add']").click()
+
     def create(self, contact):
         wd = self.app.wd
         self.app.open_home_page()
@@ -223,10 +234,28 @@ class ContactHelper:
         phone2 = re.search("P: (.*)", text).group(1)
         return Contact(home=home, mobile=mobile, work=work, phone2=phone2)
 
+    def is_contact_in_group(self, contact_id, group_id):
+        wd = self.app.wd
+        self.open_group(group_id)
+        items = wd.find_elements_by_css_selector("input[name='selected[]'][value='%s']" % contact_id)
+        if len(items) > 0:
+            return True
+        else:
+            return False
 
+    def is_contact_not_in_group(self, contact_id, group_id):
+        if self.is_contact_in_group(contact_id, group_id):
+            return False
+        else:
+            return True
 
+    def open_group(self, group_id):
+        wd = self.app.wd
+        self.app.open_home_page()
+        Select(wd.find_element_by_css_selector("select[name='group']")).select_by_value(group_id)
 
-
-
-
-
+    def remove_contact_from_group(self, contact_id, group_id):
+        self.open_group(group_id)
+        wd = self.app.wd
+        wd.find_element_by_css_selector("input[value='%s']" % contact_id).click()
+        wd.find_element_by_css_selector("input[name='remove']").click()
