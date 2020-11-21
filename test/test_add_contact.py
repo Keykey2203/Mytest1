@@ -16,8 +16,14 @@ def test_add_contact(app, db, json_contacts, check_ui):
         assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
 
 
-def test_add_contact_to_group(app, db, check_ui):
-    contact = random.choice(db.get_contact_list())
+def test_add_contact_to_group(app, db, json_contacts, check_ui):
+    contact = Contact()
+    contacts_whitout_group = db.get_contacts_whitout_group()
+    if len(contacts_whitout_group) == 0:
+        app.contact.create(json_contacts[0])
+        contact = db.get_contacts_whitout_group()[0]
+    else:
+        contact = random.choice(contacts_whitout_group)
     group = random.choice(db.get_group_list())
     app.contact.move_contact_to_group(contact.id, group.id)
     if check_ui:
