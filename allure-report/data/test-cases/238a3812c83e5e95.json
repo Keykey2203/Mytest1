@@ -1,0 +1,110 @@
+{
+  "uid" : "238a3812c83e5e95",
+  "name" : "test_add_group2[None:namec ;header  j2;footeruS]",
+  "fullName" : "test.test_add_group2.test_add_group2[None:namec ;header  j2;footeruS]",
+  "historyId" : "e1971c39c3ce1c1988f5b11ed6bfa6c0",
+  "time" : {
+    "start" : 1621776085827,
+    "stop" : 1621776087781,
+    "duration" : 1954
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given agroup list",
+      "time" : {
+        "start" : 1621776085916,
+        "stop" : 1621776085938,
+        "duration" : 22
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "When a add a group None:namec ;header  j2;footeruS to the list",
+      "time" : {
+        "start" : 1621776085938,
+        "stop" : 1621776087737,
+        "duration" : 1799
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "When a I add a group list is equal to the old list with the added group",
+      "time" : {
+        "start" : 1621776087737,
+        "stop" : 1621776087781,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "DESKTOP-8AAHE0R"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "3252-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test.test_add_group2"
+  }, {
+    "name" : "testClass",
+    "value" : "test.test_add_group2"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_add_group2[None:namec ;header  j2;footeruS]"
+  }, {
+    "name" : "package",
+    "value" : "test.test_add_group2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "238a3812c83e5e95.json",
+  "parameterValues" : [ ]
+}

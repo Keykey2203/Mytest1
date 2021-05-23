@@ -1,0 +1,110 @@
+{
+  "uid" : "8532f32925e0a314",
+  "name" : "test_add_group2[None:nameRFR;header ;XCt|37|,M0c0o;footer#~9:fu(Nr%y3C[7 Z]",
+  "fullName" : "test.test_add_group2.test_add_group2[None:nameRFR;header ;XCt|37|,M0c0o;footer#~9:fu(Nr%y3C[7 Z]",
+  "historyId" : "93ed57629ec0c9e3e291a00a59e47443",
+  "time" : {
+    "start" : 1621776075785,
+    "stop" : 1621776077789,
+    "duration" : 2004
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given agroup list",
+      "time" : {
+        "start" : 1621776075918,
+        "stop" : 1621776075939,
+        "duration" : 21
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "When a add a group None:nameRFR;header ;XCt|37|,M0c0o;footer#~9:fu(Nr%y3C[7 Z to the list",
+      "time" : {
+        "start" : 1621776075939,
+        "stop" : 1621776077742,
+        "duration" : 1803
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "When a I add a group list is equal to the old list with the added group",
+      "time" : {
+        "start" : 1621776077742,
+        "stop" : 1621776077788,
+        "duration" : 46
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "DESKTOP-8AAHE0R"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "3252-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test.test_add_group2"
+  }, {
+    "name" : "testClass",
+    "value" : "test.test_add_group2"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_add_group2[None:nameRFR;header ;XCt|37|,M0c0o;footer#~9:fu(Nr%y3C[7 Z]"
+  }, {
+    "name" : "package",
+    "value" : "test.test_add_group2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8532f32925e0a314.json",
+  "parameterValues" : [ ]
+}

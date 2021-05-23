@@ -1,0 +1,110 @@
+{
+  "uid" : "95a3d748df926e75",
+  "name" : "test_add_group2[None:nameTr] IZev;headerGq| c]{:7T;footer h5CebLTg]",
+  "fullName" : "test.test_add_group2.test_add_group2[None:nameTr] IZev;headerGq| c]{:7T;footer h5CebLTg]",
+  "historyId" : "9ea27a8065fc961ecec82f6f2e669e3e",
+  "time" : {
+    "start" : 1621776081736,
+    "stop" : 1621776083852,
+    "duration" : 2116
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given agroup list",
+      "time" : {
+        "start" : 1621776081822,
+        "stop" : 1621776081848,
+        "duration" : 26
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "When a add a group None:nameTr] IZev;headerGq| c]{:7T;footer h5CebLTg to the list",
+      "time" : {
+        "start" : 1621776081848,
+        "stop" : 1621776083812,
+        "duration" : 1964
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "When a I add a group list is equal to the old list with the added group",
+      "time" : {
+        "start" : 1621776083812,
+        "stop" : 1621776083852,
+        "duration" : 40
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "DESKTOP-8AAHE0R"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "3252-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test.test_add_group2"
+  }, {
+    "name" : "testClass",
+    "value" : "test.test_add_group2"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_add_group2[None:nameTr] IZev;headerGq| c]{:7T;footer h5CebLTg]"
+  }, {
+    "name" : "package",
+    "value" : "test.test_add_group2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "95a3d748df926e75.json",
+  "parameterValues" : [ ]
+}
